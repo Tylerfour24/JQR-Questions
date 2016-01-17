@@ -11,13 +11,11 @@ int main(void)
 
 void recursion(int count)
 {
+	printf("%d\n", count);
+	count--;
 	if (count >= 0)
 	{
-		printf("%d\n", count);
-		count -= 1;
-		if (count >= 0)
-		{
-			recursion(count);
-		}
+		recursion(count);
 	}
+	printf("%d\n", count);
 }
